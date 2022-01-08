@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    /* overflow: hidden; */
+    background-color: #D9D7F1;
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+#navHead {
+    position: relative;
+    width: 100%;
+    height: 13vh;
+    background-color: #D9D7F1;
+    border-bottom: 2px solid white;
+}
+
+#navHead img {
+    position: absolute;
+    right: 2%;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+#logo {
+    position: absolute;
+    color: #000000;
+    font-size: 24px;
+    font-style: bold;
+    margin-left: 16px;
+}
+
+
+#category1content {
+    width: 100%;
+    height: 60vh;
+    /* padding-bottom: 56px; */
+
+}
+
+#cardList1 {
+    text-decoration: none;
+    list-style: none;
+}
+
+#cardlist1 li {
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#cardList1 li img {
+    display: block;
+    padding: 5px;
+    width: 350px;
+    height: 350px;
+    border-radius: 24px;
+    /* background-color: #dddddd; */
+}
+
+#category2content {
+    width: 100%;
+    height: 100vh;
+    /* padding-bottom: 56px; */
+
+}
+#foot{
+    width: 100%;
+    height: 32%;
+    margin-top: 45px;
+}
+#cardList2 {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 56px;
+}
+
+#cardlist2 li {
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#cardList2 li img {
+    display: block;
+    padding: 5px;
+    width: 350px;
+    height: 350px;
+    border-radius: 24px;
+    /* background-color: #dddddd; */
+}
+
+
+#menuboxProj {
+    display: none;
+    position: absolute;
+    width: 450px;
+    height: 100vh;
+    background-color: #9e9ac7;
+    /* background-color: #9e9ac749; */
+    top: 0%;
+    right: 0%;
+    animation: menuswipe .5s;
+}
+
+#menuboxProj h1 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+
+}
+
+#menuListProj {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    list-style-type: none;
+    font-size: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* animation: menuswipe 2s; */
+}
+
+#menuListProj li {
+    margin-bottom: 24px;
+
+}
+
+#cancelIconProj {
+    position: absolute;
+    right: 5.2%;
+    top: 4.2%;
+    /* animation: menuswipe 2s; */
+    cursor: pointer;
+
+}
+
+@keyframes menuswipe {
+    from {
+        right: -40%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+
+
+
+/* //images */
