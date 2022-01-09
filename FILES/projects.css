@@ -157,6 +157,58 @@ body {
 }
 
 
+@media screen and (max-width: 600px) {
+    #cardList1 li img {
+        padding-top: 20px;
+        width: 200px;
+        height: 200px;
 
+    }
+
+    #cardlist1 li {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    #cardlist2 li {
+        list-style: none;
+        float: left;
+        margin-left: 20px;
+    }
+    
+    #cardList2 li img {
+        width: 200px;
+        height: 200px;
+    
+    }
+    #cardList2 {
+        
+        margin-top: 0px;
+    }
+
+    #menuboxProj {
+        /* display: block; */
+        position: absolute;
+        width: 70vw;
+        animation: menuswipe .5s;
+    }
+
+    #menuboxProj h1 {
+        font-size: 12px;
+        left: 55%;
+    }
+
+    #menuListProj {
+
+        font-size: 24px;
+
+    }
+
+    #menuListProj li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+
+    }
+}
 
 /* //images */

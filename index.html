@@ -7,12 +7,12 @@
     <title>multi.</title>
 </head>
 <body>
+    <script src="./FILES/index.js"></script>
     <header>
         <div id="navHead">
             <h1 id="logo">multi.</h1>
             <div class="navbar">
                 <ul id="navList">
-                    <li><a><img src="./RES/bars.svg"></a></li>
                     <li><a>About</a></li>
                     <li><a>Vision</a></li>
                     <li><a href="./FILES/projects.htm" target="_blank">Projects</a></li>
@@ -20,6 +20,7 @@
                     <!-- <img src="./res/search_icon.svg"> -->
                 </ul>
             </div>
+            <img id="menuIcon" src="./RES/bars.svg" onclick="openMenu()">
         </div>
     </header>
     
@@ -38,15 +39,16 @@
             <li><a href="https://www.snapchat.com/jindvirs" target="_blank"><img src="./RES/snapchat.svg"></a></li>
         </ul>
     </div>
-    <div class="menuBox">
+    <div id="menuBox">
         <ul id="menuList">
             <li><a>Profile</a></li>
-            <li><a>Projects</a></li>
+            <li><a href="./FILES/projects.htm" target="_blank">Projects</a></li>
             <li><a>Vision</a></li>
             <li><a>About</a></li>
+            <li><a>Social</a></li>
             <!-- <img src="./res/search_icon.svg"> -->
         </ul>
-        <img id="cancelIcon"src="./RES/Cancel.svg" alt="cancel">
+        <img id="cancelIcon"src="./RES/Cancel.svg" alt="cancel" onclick="closeMenu()">
         <h1>made with love</h1>
     </div>
 

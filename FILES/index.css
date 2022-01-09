@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-body{
+body {
     overflow: hidden;
     background-color: #D9D7F1;
     font-family: 'Poppins', sans-serif;
@@ -9,7 +9,7 @@ body{
     padding: 0%;
 }
 
-#navHead{
+#navHead {
     position: relative;
     width: 100%;
     height: 13vh;
@@ -17,7 +17,7 @@ body{
     border-bottom: 2px solid white;
 }
 
-#logo{
+#logo {
     position: absolute;
     color: #000000;
     font-size: 24px;
@@ -25,7 +25,7 @@ body{
     margin-left: 16px;
 }
 
-#navList{
+#navList {
     /* margin-top: 70px; */
     list-style: none;
     text-decoration: none;
@@ -48,13 +48,13 @@ body{
     text-decoration: none;
 }
 
-.con{
+.con {
 
     width: 100%;
     height: 100vh;
 }
 
-#tagline1{
+#tagline1 {
     font-size: 76px;
     margin-top: 94px;
     margin-left: 198px;
@@ -62,7 +62,7 @@ body{
 }
 
 
-#tagline2{
+#tagline2 {
     position: absolute;
     font-size: 76px;
     margin-top: -48px;
@@ -70,52 +70,37 @@ body{
     right: 0%;
     animation: rightmove 2s;
 }
-@keyframes leftmove{
-    from{
+
+@keyframes leftmove {
+    from {
         margin-left: 0px;
     }
-    to{
+
+    to {
         margin-left: 198px;
     }
 }
-@keyframes rightmove{
-    from{
+
+@keyframes rightmove {
+    from {
         margin-right: 0px;
     }
-    to{
+
+    to {
         margin-right: 198px;
     }
 }
 
 
-.social{
-    position: fixed;
-    width: 56px;
-    height: 250px;
-    background-color: #000000;
-    top: 28%;
-    left: 0%;
-    /* border-bottom-right-radius: ; */
+.social {
+   display: none;
 }
 
-#socialIcon{
-    /* margin: ]; */
-    left: 0%;
-    padding-left: 12px;
-    padding-top: 34px;
-    margin-top: 8px;
-    
-}
-
-#socialIcon li{
-    cursor: pointer;
-    padding-bottom: 16px;
-}
 
 /* #socialIcon li a {
 
 } */
-.menubox{
+#menubox {
     display: none;
     position: absolute;
     width: 450px;
@@ -127,15 +112,16 @@ body{
     animation: menuswipe 2s;
 }
 
-.menubox h1{
+#menubox h1 {
     position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 16px;
 
 }
-#menuList{
+
+#menuList {
     list-style: none;
     text-decoration: none;
     font-weight: 600;
@@ -144,31 +130,119 @@ body{
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     /* animation: menuswipe 2s; */
 }
 
 #menuList li {
     margin-bottom: 24px;
-    
+
 }
 
-#cancelIcon{
+#cancelIcon {
     position: absolute;
     right: 5.2%;
     top: 4.2%;
     /* animation: menuswipe 2s; */
     cursor: pointer;
-    
+
 }
 
 @keyframes menuswipe {
-    from{
+    from {
         right: -40%;
     }
-    to{
+
+    to {
         right: 0%;
     }
 }
 
+#menuIcon {
+    display: none;
+}
 
+@media screen and (max-width: 600px) {
+    #navList {
+        display: none;
+    }
+
+    #menuIcon {
+        display: block;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        margin-top: 23px;
+        margin-right: 12px;
+    }
+
+
+
+
+    #tagline1 {
+        font-size: 24px;
+        margin-top: 94px;
+        margin-left: 58px;
+        animation: leftmove 2s;
+    }
+
+
+    #tagline2 {
+        font-size: 24px;
+        margin-top: -28px;
+        margin-right: 58px;
+        right: 0%;
+        animation: rightmove 2s;
+    }
+
+    @keyframes leftmove {
+        from {
+            margin-left: 0px;
+        }
+
+        to {
+            margin-left: 58px;
+        }
+    }
+
+    @keyframes rightmove {
+        from {
+            margin-right: 0px;
+        }
+
+        to {
+            margin-right: 58px;
+        }
+    }
+
+    #menubox {
+        /* display: block; */
+        position: absolute;
+        width: 70vw;
+        animation: menuswipe .5s;
+    }
+
+    #menubox h1 {
+        font-size: 12px;
+        left: 55%;
+    }
+
+    #menuList {
+
+        font-size: 24px;
+
+    }
+
+    #menuList li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+
+    }
+
+    #cancelIcon {
+
+        top: 4.5%;
+
+
+    }
+}
